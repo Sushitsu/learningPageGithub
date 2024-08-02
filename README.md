@@ -19,6 +19,7 @@ This repository contains a landing page designed for phishing simulation purpose
    ```
 3. **Open the HTML File** :
    - Open the index.html file in a web browser to view and interact with the landing page.
+     
 4. **Modify JavaScript as Needed** :
    - The JavaScript code (script.js) contains the logic for displaying the custom alert with a black background.
 
