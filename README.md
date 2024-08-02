@@ -4,22 +4,22 @@ This repository contains a landing page designed for phishing simulation purpose
 
 ## Features
 
-- **Custom Alert System**: Displays a custom alert with a black background to notify users when required fields are not filled out.
+- **Custom Alert System** : Displays a custom alert with a black background to notify users when required fields are not filled out.
 - **Client-Side Validation**: Ensures that both the username and password fields are populated before allowing form submission.
 
 ## How to Use
 
-1. **Clone the Repository**:
+1. **Clone the Repository** :
    ```bash
    git clone https://github.com/your-username/phishing-simulation-landing-page.git
    ```
-2. **Navigate to the Project Directory**:
+2. **Navigate to the Project Directory** :
    ```bash
    cd phishing-simulation-landing-page
    ```
-3. **Open the HTML File**:
+3. **Open the HTML File** :
    - Open the index.html file in a web browser to view and interact with the landing page.
-4. **Modify JavaScript as Needed**:
+4. **Modify JavaScript as Needed** :
    - The JavaScript code (script.js) contains the logic for displaying the custom alert with a black background.
 
 ## Important Notice
