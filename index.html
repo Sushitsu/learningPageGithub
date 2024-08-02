@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,7 @@
     </head>
 
     <body class="session-authentication">
-        <div class="header" role="banner">
+        <div class="header pt-5 pb-4" role="banner">
             <div class="container">
                 <a class="header-logo">
                     <svg height="48" aria-hidden="true" viewBox="0 0 24 24" width="48" data-view-component="true" class="octicon">
@@ -18,9 +19,9 @@
             </div>
         </div>
 
-        <main>
-            <div class="login-container">
-                <div class="login-header">
+        <main id="main-content" tabindex="-1">
+            <div class="auth-form">
+                <div class="auth-form-header p-0">
                     <h1>Sign in to GitHub</h1>
                 </div>
 
@@ -34,28 +35,44 @@
                                 <label for="password">Password</label>
                                 <input type="password" name="password" id="password" class="form-control form-control input-block" autocomplete="current-password" required="required">
                                 <a class="label-link position-absolute" id="forgot-password" href="/password_reset">Forgot password?</a>
-                            <input type="submit" name="commit" value="Sign in" class="btn btn-primary btn-block js-sign-in-button" data-disable-with="Signing in…" data-signin-label="Sign in" data-sso-label="Sign in with your identity provider" development="false" disable-emu-sso="false" data-bitwarden-clicked="1">                        </form>
-                        </div>
+                                <input type="submit" name="commit" value="Sign in" class="btn btn-primary btn-block js-sign-in-button" data-disable-with="Signing in…" data-signin-label="Sign in" data-sso-label="Sign in with your identity provider" development="false" disable-emu-sso="false" data-bitwarden-clicked="1">
+                            </div>
+                        </form>
                     </div>
                 </div>
+            </div>
 
-                <div class="sign-in-passkey">
-                    <button>Sign in with a passkey</button>
-                </div>
+            <div class="login-callout">
+                <button data-action="click:webauthn-subtle#prompt" type="button" data-view-component="true" class="Button--link Button">
+                    <span class="Button-content">
+                        <span class="Button-label">Sign in with a passkey</span>
+                    </span>
+                </button>
                 <div class="new-to-github">
-                    <p>New to GitHub? <a href="https://github.com/join">Create an account</a>.</p>
+                    <p>New to GitHub? <a href="https://github.com/join">Create an account</a></p>
                 </div>
             </div>
         </main>
 
-        <footer>
-            <ul>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Docs</a></li>
-                <li><a href="#">Contact GitHub Support</a></li>
-                <li><a href="#">Manage cookies</a></li>
-                <li><a href="#">Do not share my personal information</a></li>
+        <footer class="footer container-lg p-responsive" role="contentinfo">
+            <ul class="list-style-none d-flex flex-justify-center">
+                <li class="mx-2">
+                    <a data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to Terms&quot;,&quot;label&quot;:&quot;text:terms&quot;}" href="https://docs.github.com/site-policy/github-terms/github-terms-of-service" data-view-component="true" class="Link--secondary Link">Terms</a>
+                </li>
+                <li class="mx-2">
+                    <a data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to privacy&quot;,&quot;label&quot;:&quot;text:privacy&quot;}" href="https://docs.github.com/site-policy/privacy-policies/github-privacy-statement" data-view-component="true" class="Link--secondary Link">Privacy</a>
+                </li>
+                <li class="mx-2">
+                    <a data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to docs&quot;,&quot;label&quot;:&quot;text:docs&quot;}" href="https://docs.github.com" data-view-component="true" class="Link--secondary Link">Docs</a>
+                </li>
+                <li class="mx-2">
+                    <a data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to contact&quot;,&quot;label&quot;:&quot;text:contact&quot;}" href="https://support.github.com" data-view-component="true" class="Link--secondary Link">Contact GitHub Support</a>
+                </li>
+                <li class="mx-2">
+                    <button type="button" class="Link--secondary underline-on-hover border-0 p-0 color-bg-transparent" data-action="click:cookie-consent-link#showConsentManagement" data-analytics-event="{&quot;location&quot;:&quot;footer&quot;,&quot;action&quot;:&quot;cookies&quot;,&quot;context&quot;:&quot;subfooter&quot;,&quot;tag&quot;:&quot;link&quot;,&quot;label&quot;:&quot;cookies_link_subfooter_footer&quot;}"> Manage cookies</button>
+                </li>
+                <li class="mx-2">
+                    <button type="button" class="Link--secondary underline-on-hover border-0 p-0 color-bg-transparent" data-action="click:cookie-consent-link#showConsentManagement" data-analytics-event="{&quot;location&quot;:&quot;footer&quot;,&quot;action&quot;:&quot;dont_share_info&quot;,&quot;context&quot;:&quot;subfooter&quot;,&quot;tag&quot;:&quot;link&quot;,&quot;label&quot;:&quot;dont_share_info_link_subfooter_footer&quot;}"> Do not share my personal information </button>                </li>
             </ul>
         </footer>
         <script src="script.js"></script>
