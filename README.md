@@ -18,9 +18,9 @@ This repository contains a landing page designed for phishing simulation purpose
    cd phishing-simulation-landing-page
    ```
 3. **Open the HTML File**:
-  - Open the index.html file in a web browser to view and interact with the landing page.
+   - Open the index.html file in a web browser to view and interact with the landing page.
 4. **Modify JavaScript as Needed**:
-  - The JavaScript code (script.js) contains the logic for displaying the custom alert with a black background.
+   - The JavaScript code (script.js) contains the logic for displaying the custom alert with a black background.
 
 ## Important Notice
 This project is strictly for professional and educational purposes within a secure and authorized environment. It should be used to enhance phishing awareness and simulate phishing scenarios to improve cybersecurity practices. Any use outside of this context, including unauthorized testing or malicious activities, is strictly prohibited.
