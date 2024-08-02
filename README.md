@@ -14,9 +14,9 @@ This repository contains a landing page designed for phishing simulation purpose
    git clone https://github.com/your-username/phishing-simulation-landing-page.git
    ```
 2. **Navigate to the Project Directory**:
-  ```bash
-  cd phishing-simulation-landing-page
-  ```
+   ```bash
+   cd phishing-simulation-landing-page
+   ```
 3. **Open the HTML File**:
   - Open the index.html file in a web browser to view and interact with the landing page.
 4. **Modify JavaScript as Needed**:
