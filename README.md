@@ -1,4 +1,4 @@
-# Phishing Simulation Landing Page
+# Phishing Simulation Landing Page GitHub
 
 This repository contains a landing page designed for phishing simulation purposes. It is intended solely for use within a controlled, professional environment to test and improve security awareness. This tool is not meant for malicious activities or unauthorized testing.
 
